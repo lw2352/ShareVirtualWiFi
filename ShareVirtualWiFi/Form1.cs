@@ -16,5 +16,18 @@ namespace ShareVirtualWiFi
         {
             InitializeComponent();
         }
+
+        ShareWIFI myWIFI = new ShareWIFI();
+
+        private void open_Click(object sender, EventArgs e)
+        {
+            string result = myWIFI.shareWiFI("liwei","liwei123456");
+            Console.WriteLine(result);
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            myWIFI.CloseWIFI();
+        }
     }
 }
