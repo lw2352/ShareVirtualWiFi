@@ -49,7 +49,7 @@ namespace ShareVirtualWiFi
             _pCmd.StartInfo.CreateNoWindow = true;
             _pCmd.Start();
 
-            string cmd = "netsh waln stop hostednetwork";
+            string cmd = "netsh wlan stop hostednetwork";
             _pCmd.StandardInput.WriteLine(cmd);
             _pCmd.StandardInput.WriteLine("exit");
         }

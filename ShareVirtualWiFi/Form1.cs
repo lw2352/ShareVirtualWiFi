@@ -21,7 +21,7 @@ namespace ShareVirtualWiFi
 
         private void open_Click(object sender, EventArgs e)
         {
-            string result = myWIFI.shareWiFI("lw1","liwei123456");
+            string result = myWIFI.shareWiFI(textBoxSSID.Text,textBoxPassWord.Text);
             Console.WriteLine(result);
         }
 
